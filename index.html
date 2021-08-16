@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/index.css" />
+    <style>
+      th {
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="Input-form">
+      <form action="">
+        <p>First Name:</p>
+        <input name="fName" type="text" id="fName" />
+        <p>Last Name:</p>
+        <input name="lName" type="text" id="lName" />
+        <p>Email:</p>
+        <input name="eMail" type="email" id="eMail" /><br />
+        <input id="submit" name="button" type="submit" value="Add" />
+      </form>
+      <br />
+      <br />
+      <input
+        type="text"
+        name=""
+        id="myInput"
+        placeholder="feeling lazy...."
+        onkeyup="searchFun()"
+      />
+      <br />
+      <div>
+        <button id="sortButton">SORT</button>
+      </div>
+      <table id="table">
+        <tr>
+          <th class="clickable headth" 
+          data-column="fname" data-order="desc">
+            First Name
+          </th>
+          <th class="clickable headth" data-column="lname" data-order="desc">
+            Second Name
+          </th>
+          <th class="clickable headth" data-column="email" data-order="desc">Email</th>
+        </tr>
+        <!-- <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+</tr> -->
+      </table>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="jquery-2.2.3.min.js"></script>
+    <script src="/index.js"></script>
+  </body>
+</html>
